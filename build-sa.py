@@ -4,6 +4,7 @@ with open("sa.json") as sa:
     datas = json.loads(sa.read())
 if os.path.exists("__cloned__"):
     shutil.rmtree("__cloned__")
+actual_cwd = os.getcwd()
 
 for data in datas:
     cloned_path = f"__cloned__/{data["url-slug"]}"
@@ -23,5 +24,12 @@ for data in datas:
         build_data["pages"] = new_data["pages"]
     with open("build-config.json", "w") as bc:
         json.dump(build_data, bc)
-    os.system(f"python3 build/build.py && cp -r build-output {data["url-slug"]}")
+    if os.path.exists(f"{cloned_path}/build.sh"):
+        os.chdir(cloned_path)
+        os.system("./build.sh")
+        os.chdir(actual_cwd)
+        os.system(f"cp -r {cloned_path}/build-output {data["url-slug"]}")
+    else:
+        os.system("python3 build/build.py")
+        os.system(f"cp -r build-output {data["url-slug"]}")
     print(f"{data["name"]} done")

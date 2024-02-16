@@ -8,5 +8,15 @@
         "name": "Tic Tac Toe",
         "url-slug": "ttt",
         "repo": "https://github.com/Jothin-kumar/tic-tac-toe"
+    },
+    {
+        "name": "joth.in",
+        "url-slug": "joth.in",
+        "repo": "https://github.com/Jothin-kumar/joth.in-homepage"
+    },
+    {
+        "name": "jothin.tech",
+        "url-slug": "jothin.tech",
+        "repo": "https://github.com/Jothin-kumar/jothin.tech-homepage"
     }
 ]
