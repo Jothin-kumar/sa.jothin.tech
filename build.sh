@@ -1,3 +1,5 @@
+python3 -m pip install -r requirements.txt
+
 python3 generate-homepage.py
 printf "generate homepage ✅\n\n"
 
