@@ -7,8 +7,8 @@ if os.path.exists("__cloned__"):
 actual_cwd = os.getcwd()
 
 for data in datas:
-    cloned_path = f"__cloned__/{data["url-slug"]}"
-    os.system(f"git clone {data["repo"]} {cloned_path}")
+    cloned_path = f"__cloned__/{data['url-slug']}"
+    os.system(f"git clone {data['repo']} {cloned_path}")
     build_data = {
         "parent-dir": cloned_path,
         "line-end": "\n",
@@ -28,8 +28,8 @@ for data in datas:
         os.chdir(cloned_path)
         os.system("./build.sh")
         os.chdir(actual_cwd)
-        os.system(f"cp -r {cloned_path}/build-output to-deploy/{data["url-slug"]}")
+        os.system(f"cp -r {cloned_path}/build-output to-deploy/{data['url-slug']}")
     else:
         os.system("python3 build/build.py")
-        os.system(f"cp -r build-output to-deploy/{data["url-slug"]}")
-    print(f"{data["name"]} done")
+        os.system(f"cp -r build-output to-deploy/{data['url-slug']}")
+    print(f"{data['name']} done")

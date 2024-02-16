@@ -15,5 +15,5 @@ python3 build/build.py
 cp -r build-output to-deploy
 printf "build.py ✅\n\n"
 
-python3.12 build-sa.py
+python3 build-sa.py
 printf "build-sa.py ✅\n\n"
