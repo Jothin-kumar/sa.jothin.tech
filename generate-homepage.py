@@ -1,8 +1,9 @@
+from json import load
+
 new_app = lambda name, url: f'<li><a href="{url}">{name}</a></li>'
 
-apps = [
-    {"name": "qw", "url-slug": "qw"}, 
-]
+with open("sa.json") as sa:
+    apps = load(sa)
 
 with open("index.html", "r") as html_file:
     html_content = html_file.read()
