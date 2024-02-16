@@ -28,8 +28,8 @@ for data in datas:
         os.chdir(cloned_path)
         os.system("./build.sh")
         os.chdir(actual_cwd)
-        os.system(f"cp -r {cloned_path}/build-output {data["url-slug"]}")
+        os.system(f"cp -r {cloned_path}/build-output to-deploy/{data["url-slug"]}")
     else:
         os.system("python3 build/build.py")
-        os.system(f"cp -r build-output {data["url-slug"]}")
+        os.system(f"cp -r build-output to-deploy/{data["url-slug"]}")
     print(f"{data["name"]} done")
