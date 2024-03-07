@@ -1,12 +1,7 @@
 [
     {
-        "name": "login form",
-        "url-slug": "login-form",
-        "repo": "https://github.com/Jothin-kumar/login-form"
-    },
-    {
-        "name": "Tic Tac Toe",
-        "url-slug": "ttt",
-        "repo": "https://github.com/Jothin-kumar/tic-tac-toe"
+        "name": "Timer",
+        "url-slug": "timer",
+        "repo": "https://github.com/Jothin-kumar/timer"
     }
 ]
