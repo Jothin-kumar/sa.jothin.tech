@@ -19,3 +19,6 @@ printf "build.py ✅\n\n"
 
 python3 build-sa.py
 printf "build-sa.py ✅\n\n"
+
+cp favicon.webp to-deploy/favicon.webp
+printf "copy favicon ✅\n\n"
