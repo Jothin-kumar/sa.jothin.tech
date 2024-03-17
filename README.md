@@ -7,6 +7,3 @@ In `sa.json`, add this to the main array:
   "repo": "https://github.com/Jothin-kumar/<repo>"
 }
 ```
-
-# Deploying
-Run `./build.sh` and deploy the `to-deploy` directory.
