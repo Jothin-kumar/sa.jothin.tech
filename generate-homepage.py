@@ -9,3 +9,6 @@ with open("index.html", "r") as html_file:
     html_content = html_file.read()
 with open("index.html", "w") as html_file:
     html_file.write(html_content.replace("<!-- apps-here -->", "\n".join([new_app(data["name"], "/" + data["url-slug"]) for data in apps])))
+
+with open("sitemap.txt", "w") as sitemap_file:
+    sitemap_file.write("\n".join(["https://sa.jothin.tech"] + [f"https://sa.jothin.tech/" + data["url-slug"] for data in apps]))
