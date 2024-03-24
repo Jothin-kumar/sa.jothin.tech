@@ -3,5 +3,10 @@
         "name": "Timer",
         "url-slug": "timer",
         "repo": "https://github.com/Jothin-kumar/timer"
+    },
+    {
+        "name": "Flames Calculator",
+        "url-slug": "flames",
+        "repo": "https://github.com/Jothin-kumar/flames"
     }
 ]
