@@ -8,5 +8,10 @@
         "name": "Flames",
         "url-slug": "flames",
         "repo": "https://github.com/Jothin-kumar/flames"
-    }
+    },
+    {
+        "name": "Base Converter",
+        "url-slug": "base-converter",
+        "repo": "https://github.com/Jothin-kumar/base-converter"
+      }
 ]
