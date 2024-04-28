@@ -23,4 +23,5 @@ printf "copy favicon ✅\n\n"
 
 cp robots.txt to-deploy/robots.txt
 cp sitemap.txt to-deploy/sitemap.txt
-printf "copy robots.txt,  sitemap.txt ✅\n\n"
+cp _redirects to-deploy/_redirects
+printf "copy robots.txt, sitemap.txt & _redirects ✅\n\n"
