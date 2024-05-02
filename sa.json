@@ -13,5 +13,10 @@
         "name": "Base Converter",
         "url-slug": "base-converter",
         "repo": "https://github.com/Jothin-kumar/base-converter"
-      }
+    },
+    {
+        "name": "Flip A Coin",
+        "url-slug": "flip-a-coin",
+        "repo": "https://github.com/Jothin-kumar/flip-a-coin"
+    }
 ]
