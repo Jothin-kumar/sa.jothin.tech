@@ -18,5 +18,10 @@
         "name": "Flip A Coin",
         "url-slug": "flip-a-coin",
         "repo": "https://github.com/Jothin-kumar/flip-a-coin"
+    },
+    {
+        "name": "Matrix Tools",
+        "url-slug": "matrix-tools",
+        "repo": "https://github.com/Jothin-kumar/matrix-tools"
     }
 ]
